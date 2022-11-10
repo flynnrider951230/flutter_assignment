@@ -32,5 +32,5 @@ Keyword const dengan final keduanya digunakan untuk menyimpan value yang bersifa
 
 ##### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
-Pertama-tama, saya melakukan flutter create counter_7 terlebih dahulu untuk membuat sebuah aplikasi flutter baru. Setelah itu, saya mulai memodifikasi program pada main.dart sesuai dengan ketentuan tugas. Saya menambahkan fungsi baru yang _decrementCounter yang berfungsi untuk melakukan decrement pada nilai counter dengan syarat bahwa nilai counter tidak lebih kecil dari 1. Setelah itu, saya menambahkan satu floatingActionButton dengan icon remove untuk trigger proses decrement pada counter. Alignment antara button increment dengan decrement diatur dengan MainAxisAlignment.spaceBetween. 
+Pertama-tama, saya melakukan flutter create counter_7 terlebih dahulu untuk membuat sebuah aplikasi flutter baru. Setelah itu, saya mulai memodifikasi program pada main.dart sesuai dengan ketentuan tugas. Saya menambahkan fungsi baru yang _decrementCounter yang berfungsi untuk melakukan decrement pada nilai counter dengan syarat bahwa nilai counter tidak lebih kecil dari 1. Setelah itu, saya menambahkan satu floatingActionButton dengan icon remove dengan trigger onclick untuk melakukan proses decrement pada counter. Alignment antara button increment dengan decrement diatur dengan MainAxisAlignment.spaceBetween. 
 
