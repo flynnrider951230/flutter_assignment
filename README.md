@@ -1,4 +1,4 @@
-#### Shafa Aleyda - 2106634534 
+### Shafa Aleyda - 2106634534 
 #### Tugas 7 PBP
 #
 ##### Jelaskan apa yang dimaksud dengan stateless widget dan stateful widget dan jelaskan perbedaan dari keduanya.
@@ -33,4 +33,39 @@ Keyword const dengan final keduanya digunakan untuk menyimpan value yang bersifa
 ##### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
 Pertama-tama, saya melakukan flutter create counter_7 terlebih dahulu untuk membuat sebuah aplikasi flutter baru. Setelah itu, saya mulai memodifikasi program pada main.dart sesuai dengan ketentuan tugas. Saya menambahkan fungsi baru yang _decrementCounter yang berfungsi untuk melakukan decrement pada nilai counter dengan syarat bahwa nilai counter tidak lebih kecil dari 1. Setelah itu, saya menambahkan satu floatingActionButton dengan icon remove dengan trigger onclick untuk melakukan proses decrement pada counter. Alignment antara button increment dengan decrement diatur dengan MainAxisAlignment.spaceBetween. 
+
+#
+#### Tugas 8 PBP
+
+##### Perbedaan Navigator.push dengan Navigator.pushReplacement
+
+Navigator.push adalah sebuah method pada Flutter yang berfungsi untuk menambahkan route baru ke stack route dimana stack route sendiri dikelola oleh Navigator. Sedangkan, Navigator.pushReplacement sendiri adalah sebuah method pada Flutter yang berfungsi untuk mengganti route yang sedang aktif pada navigator dengan melakukan operasi push route baru dan membuang route sebelumnya apabila route yang baru telah selesai melakukan 
+
+##### Widget yang digunakan dan fungsinya 
+
+- Text: menampilkan tulisan serta memodifikasi tampilan tulisan 
+- Form: mengelompokkan dan melakukan validasi pada beberapa formfields
+- Row & Column: widgets pada Flutter yang memungkinkan children di-align secara horizontal ataupun vertikal 
+- TextButton: button tanpa border yang memiliki reaksi terhadap onPressed dan onLongPress
+- Padding: menambahkan padding atau space kosong pada sekeliling widget 
+- Drawer: untuk navigasi antar halaman
+- Container: sebuah widget yang bertugas sebagai pembungkus dari widget lain
+
+##### Jenis-jenis action pada Flutter 
+- onPressed()
+- onClick()
+- onSaved()
+- onLongPress()
+- onTap()
+
+##### Cara kerja Navigator dalam “mengganti” halaman pada Flutter 
+
+Navigator menyediakan methods untuk mengubah stack dengan melakukan operasi push pada stack ataupun pop dari stack. Method Navigator.push digunakan untuk navigasi ke halaman baru sedangkan navigator pop digunakan untuk kembali dari halaman yang sedang diakses ke halaman sebelumnya. Pada aplikasi mobile, full-screen elements umumnya disebut sebagai “screens” atau “pages”. Pada flutter, elemen tersebut dikenal sebagai routes dan dikelola oleh widget Navigator. Navigator mengelola sebuah stack yang berisi objek-objek dari routes. Navigator akan mengubah Navigator.pages menjadi sebuah stack berisi routes. Apabila terjadi perubahan pada Navigator.pages maka hal tersebut akan men-trigger perubahan pada stack of routes. Navigator akan memperbarui routes agar sesuai dengan konfigurasi baru pada Navigator.pages. Route yang berada pada posisi paling bawah pada Navigator stack dapat diimplementasikan dengan MaterialApp.
+
+##### Bagaimana cara kamu implementasi checklist di atas
+
+- Membuat drawer yang berfungsi sebagai navigasi menuju halaman home, form budget dan data budget 
+- Memodifikasi halaman form.dart dengan menerapkan widget form yang menerima input dari user dalam bentuk TextForm untuk input nominal dan judul serta list drop down untuk tipe budget. Halaman budget form juga dilengkapi dengan floatingActionButton yang berfungsi untuk melakukan proses penyimpanan data input user ke list dan mengeluarkan dialog box yang menginformasikan kepada user bahwa data sudah berhasil disimpan. 
+- Memodifikasi halaman data.dart sehingga dapat menampilkan data hasil input user yang disimpan pada list judul dan nominal. Data pada list diakses sesuai dengan indexnya. Hal tersebut diimplementasikan dengan ListView.builder sehingga objek data input user pada list seluruhnya dapat ditampilkan. 
+
 
