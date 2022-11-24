@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import '/data.dart'; 
-import '/form.dart';
+import 'page/data.dart'; 
+import 'page/form.dart'; 
+import 'page/my_watchlist_page.dart'; 
+import 'package:flutter_tugas/page/detail_page_my_watchlist.dart'; 
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
-       routes:{
+      routes:{
         '/detail': (context) => const MyWatchlistDetailPage(), 
       },
     );
@@ -88,6 +90,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 context,
                 MaterialPageRoute(builder: (context) => const DataBudgetPage()),
               );
+            },
+          ),
+          ListTile(
+            title: const Text('My Watch List'),
+            onTap: () {
+                Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const MyWatchlistPage()),
+                );
             },
           ),
         ],
