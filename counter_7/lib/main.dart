@@ -18,6 +18,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const MyHomePage(),
+       routes:{
+        '/detail': (context) => const MyWatchlistDetailPage(), 
+      },
     );
   }
 }
