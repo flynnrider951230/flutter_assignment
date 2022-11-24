@@ -69,3 +69,25 @@ Navigator menyediakan methods untuk mengubah stack dengan melakukan operasi push
 - Memodifikasi halaman data.dart sehingga dapat menampilkan data hasil input user yang disimpan pada list judul dan nominal. Data pada list diakses sesuai dengan indexnya. Hal tersebut diimplementasikan dengan ListView.builder sehingga objek data input user pada list seluruhnya dapat ditampilkan. 
 
 
+#
+#### Tugas 9 PBP
+
+#####Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Walaupun bisa, namun penggunaan model mempermudah penambilan data tanpa menggunakan list multidimensi. 
+
+##### Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- RichText: menampilkan string dan fethed data JSON
+- ListView: menampilkan widget dalam bentuk list
+- InkWell: membuat widget memiliki behaviour ketika user klik pada widget tersebut 
+- Stack: menyusun data secara menumpuk 
+
+##### Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+Pertama-tama, hal yang dilakukan adalah menambahkan depedensi http ke dalam proyek. Depedensi ini berfungsi untuk bertukar data melalui metode HTTP request. Setelah itu, tambahkan potongan kode berupa user-permisiion yang berfungsi untuk membuka akses agar proyek dapat mengakses data dari internet. Model yang diperoleh melalui Quicktype kemudian disimpan di dalam file my_watchlist.dart yang berada pada folder model. Selanjutnya, akan dibuat halaman utama yang menunjukkan list model my_watchlist. Data pada JSON diperoleh melalui fungsi fetchMyWatchlist. 
+Kemudian, untuk menampilkan data pada halaman detail, dilakukan dengan bantuan pushNamed dengan routing menuju halaman detail my watchlist ketika user onTap pada list tertentu (sebelumnya, routing dibuat pada materialApp pada halaman main.dart) dengan melakukan pass argumen berupa snapshot data sesuai dengan index pada list yang akan di klik oleh user. Data pada halaman detail kemudian ditampilkan sesuai key name dari masing-masing data. 
+
+##### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Membuat folder model dan menyimpan model pada file my_watchlist.dart
+- Membuat folder page dan memindahkan seluruh file kecuali file main ke folder tersebut
+- Membuat model pada QuickType
+- Fetch data JSON sehingga data bisa ditampilkan pada halaman 
