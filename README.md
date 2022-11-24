@@ -72,7 +72,7 @@ Navigator menyediakan methods untuk mengubah stack dengan melakukan operasi push
 #
 #### Tugas 9 PBP
 
-#####Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+##### Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
 
 Kita dapat melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Walaupun bisa, namun penggunaan model mempermudah penambilan data tanpa menggunakan list multidimensi. 
 
@@ -89,5 +89,6 @@ Kemudian, untuk menampilkan data pada halaman detail, dilakukan dengan bantuan p
 ##### Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 - Membuat folder model dan menyimpan model pada file my_watchlist.dart
 - Membuat folder page dan memindahkan seluruh file kecuali file main ke folder tersebut
-- Membuat model pada QuickType
+- Recode model pada QuickType
+- Contstruct object model
 - Fetch data JSON sehingga data bisa ditampilkan pada halaman 
