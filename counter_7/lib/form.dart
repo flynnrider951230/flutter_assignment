@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '/main.dart';
-import '/data.dart'; 
+import '../main.dart';
+import 'package:flutter_tugas/page/data.dart'; 
+import 'package:flutter_tugas/page/my_watchlist_page.dart'; 
 import 'package:flutter/services.dart';
 
 var judul = []; 
@@ -59,6 +60,15 @@ class _AddBudgetPageState extends State<AddBudgetPage> {
                         context,
                         MaterialPageRoute(builder: (context) => const DataBudgetPage()),
                     );
+                    },
+                ),
+                ListTile(
+                    title: const Text('My Watch List'),
+                    onTap: () {
+                        Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => const MyWatchlistPage()),
+                        );
                     },
                 ),
                 ],
